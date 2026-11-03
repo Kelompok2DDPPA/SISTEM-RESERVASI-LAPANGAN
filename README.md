@@ -74,25 +74,10 @@ Begitu juga dengan role user dimana akan menampilkan fungsi atau menu sebagai be
 | pwinput | Input password dengan tanda * |
 | prettytable | Menampilkan data dalam bentuk tabel rapi |
 
-Instal library tambahan:
+Instal library tambahan melalui terminal:
 
 bash
 pip install prettytable pwinput
-
-
----
-
-## ▶️ Cara Menjalankan
-
-1. Pastikan Python 3 sudah terpasang.
-2. Instal library: pip install prettytable pwinput
-3. Jalankan program:
-
-bash
-python PADDP.py
-
-
-Saat pertama dijalankan, file DataDDP.json dibuat otomatis berisi 1 akun admin dan 5 lapangan awal.
 
 ---
 
@@ -104,13 +89,11 @@ Saat pertama dijalankan, file DataDDP.json dibuat otomatis berisi 1 akun admin d
 
 User biasa dibuat lewat menu *Registrasi*.
 
-*5 lapangan awal:* Futsal A, Badminton 1, Basket Indoor, Voli Pasir, Tenis Outdoor.
-
 ---
 
 ## 🗂️ Struktur Data JSON
 
-File DataDDP.json punya 5 bagian utama:
+File DataDDP.json menyimpan data user dan admin, menyimpan data lapangan, data reservasi, data topup pengguna:
 
 <img width="516" height="517" alt="WhatsApp Image 2026-11-03 at 21 49 50" src="https://github.com/user-attachments/assets/a1b99fa1-201e-4b98-9c30-2bb373a1b306" />
 <img width="579" height="481" alt="WhatsApp Image 2026-11-03 at 21 49 50 (1)" src="https://github.com/user-attachments/assets/490540ff-5a82-4e3d-a70d-720f83075c82" />
