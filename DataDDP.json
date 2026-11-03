@@ -1,0 +1,181 @@
+{
+    "users": {
+        "admin": {
+            "password": "admin123",
+            "role": "admin",
+            "saldo": 0
+        },
+        "test": {
+            "password": "123",
+            "role": "user",
+            "saldo": 0
+        },
+        "p": {
+            "password": "123",
+            "role": "user",
+            "saldo": 0
+        },
+        "j": {
+            "password": "1",
+            "role": "user",
+            "saldo": 0
+        },
+        "azam": {
+            "password": "123",
+            "role": "user",
+            "saldo": 400000
+        },
+        "ff": {
+            "password": "12345678",
+            "role": "user",
+            "saldo": 0
+        },
+        "Azzam": {
+            "password": "12345678",
+            "role": "user",
+            "saldo": 1578000
+        },
+        "ksahdkash": {
+            "password": "12345678",
+            "role": "user",
+            "saldo": 0
+        }
+    },
+    "lapangan": [
+        {
+            "id": 1,
+            "nama": "lapanganHexa",
+            "jenis": "Badminton",
+            "harga": 9000,
+            "luas": 891,
+            "lokasi": "SMD",
+            "buka": "08:05",
+            "tutup": "18:30",
+            "status": "Aktif"
+        },
+        {
+            "id": 2,
+            "nama": "LapanganDDP",
+            "jenis": "Tenis",
+            "harga": 2000,
+            "luas": 300,
+            "lokasi": "Jln Manunggal",
+            "buka": "09:20",
+            "tutup": "20:25",
+            "status": "Aktif"
+        },
+        {
+            "id": 3,
+            "nama": "LapanganLGGI",
+            "harga": 1000,
+            "luas": 812,
+            "lokasi": "JLN GGS",
+            "buka": "09:30",
+            "tutup": "17:30"
+        }
+    ],
+    "reservasi": [
+        {
+            "id": 1,
+            "username": "azam",
+            "id_lapangan": null,
+            "lapangan": "Badminton 1",
+            "lokasi": "-",
+            "harga_jam": 50000,
+            "tanggal": "2026-10-26",
+            "mulai": "10:00",
+            "durasi": 3,
+            "total": 150000,
+            "status": "Selesai",
+            "waktu_transaksi": "2026-10-25 13:04:52",
+            "denda": 0,
+            "subtotal": 150000,
+            "diskon": 0,
+            "kode_promo": "",
+            "rating": 0,
+            "ulasan": ""
+        },
+        {
+            "id": 3,
+            "username": "Azzam",
+            "id_lapangan": null,
+            "lapangan": "Futsal A",
+            "lokasi": "-",
+            "harga_jam": 120000,
+            "tanggal": "2026-10-27",
+            "mulai": "13:00",
+            "durasi": 3,
+            "total": 360000,
+            "status": "Selesai",
+            "waktu_transaksi": "2026-10-26 08:36:19",
+            "denda": 0,
+            "subtotal": 360000,
+            "diskon": 0,
+            "kode_promo": "",
+            "rating": 5,
+            "ulasan": "bagus"
+        },
+        {
+            "id": 4,
+            "username": "Azzam",
+            "id_lapangan": 1,
+            "lapangan": "lapanganHexa",
+            "lokasi": "SMD",
+            "harga_jam": 9000,
+            "tanggal": "2026-11-04",
+            "mulai": "08:30",
+            "durasi": 3,
+            "total": 27000,
+            "denda": 10000,
+            "status": "Dibatalkan",
+            "waktu_transaksi": "2026-11-03 22:17:05"
+        }
+    ],
+    "topup": [
+        {
+            "id": 1,
+            "username": "azam",
+            "nominal": 50000,
+            "waktu": "2026-10-25 12:45:37"
+        },
+        {
+            "id": 2,
+            "username": "azam",
+            "nominal": 500000,
+            "waktu": "2026-10-25 12:49:23"
+        },
+        {
+            "id": 3,
+            "username": "Azzam",
+            "nominal": 1000000,
+            "waktu": "2026-10-26 08:23:03"
+        },
+        {
+            "id": 4,
+            "username": "Azzam",
+            "nominal": 20000,
+            "waktu": "2026-10-26 08:36:41"
+        },
+        {
+            "id": 5,
+            "username": "Azzam",
+            "nominal": 20000,
+            "waktu": "2026-10-26 08:37:31"
+        },
+        {
+            "id": 6,
+            "username": "Azzam",
+            "nominal": 900000,
+            "waktu": "2026-11-03 20:03:20"
+        },
+        {
+            "id": 7,
+            "username": "Azzam",
+            "nominal": 10000,
+            "waktu": "2026-11-03 22:19:17"
+        }
+    ],
+    "promo": [],
+    "libur": [],
+    "rating": []
+}
