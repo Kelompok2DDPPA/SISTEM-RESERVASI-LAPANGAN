@@ -44,11 +44,13 @@ di menu awal ini akan login sebagai admin atau user dan kita juga bisa membuat u
 ### Menu Admin
 <img width="466" height="369" alt="image" src="https://github.com/user-attachments/assets/2f0132be-818f-426f-86ce-08e76217d2ea" />
 
-saat login sebagai admin akan menampilkan beberapa fungsi seperti berikut
+saat login sebagai role admin akan menampilkan beberapa fungsi atau menu seperti berikut, dari menu berikut pengguna dipersilahkan untuk memilih (input pilihan)
 
 
 ### Menu User
 <img width="473" height="450" alt="image" src="https://github.com/user-attachments/assets/6d9bb7b1-fc6e-49ff-9180-f7b5cf171eb8" />
+
+Begitu juga dengan role user dimana akan menampilkan fungsi atau menu sebagai berikut
 
 ### Fitur Tambahan
 - 🔐 Password disembunyikan dengan tanda *
