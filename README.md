@@ -81,6 +81,68 @@ pip install prettytable pwinput
 
 ---
 
+## 🔀 Alur Flowchart
+ 
+### 1. Flowchart Menu Utama
+ 
+<img width="1098" height="1139" alt="RESERVASI LAPANGAN C2-Flowchart Menu Utama drawio (1)" src="https://github.com/user-attachments/assets/2aa734c7-594f-4ad9-9952-a7d0225c1afa" />
+
+ 
+Alur dimulai dari **Menu Utama**, yang menampilkan pilihan Menu User, Menu Admin, Registrasi, dan Log Out. Program meminta input pilihan (1/2/3/4), lalu memeriksa validitasnya:
+ 
+- **Pilihan tidak valid** → program kembali menampilkan menu utama.
+- **Pilihan 1 (Menu User)** → masuk ke alur *Menu User*.
+- **Pilihan 2 (Menu Admin)** → masuk ke alur *Menu Admin*.
+- **Pilihan 3 (Registrasi)** → user mengisi data registrasi (Nama, Username, Password). Jika data valid, data disimpan lalu muncul pesan "Registrasi Berhasil!" dan kembali ke menu utama. Jika tidak valid, muncul pesan "Data tidak valid, cek kembali!" dan form diisi ulang.
+- **Pilihan 4 (Logout)** → muncul pesan "Anda akan keluar dari sistem", lalu program **selesai**.
+  
+### 2. Flowchart Registrasi
+ 
+<img width="357" height="972" alt="RESERVASI LAPANGAN C2-Registrasi  drawio (1)" src="https://github.com/user-attachments/assets/c9995919-36f2-4c2b-a7e7-5fdb890d929f" />
+
+ 
+1. **Mulai**, lalu tampil judul "REGISTRASI AKUN".
+2. User memasukkan **username**, lalu **password** (dengan batas maksimal karakter).
+3. Sistem memeriksa panjang password. Jika **lebih dari 8 karakter**, tampil pesan "Password tidak boleh lebih dari 8 karakter".
+4. Jika valid, data **disimpan ke JSON** dan tampil pesan akun berhasil dibuat.
+5. User menekan **Enter** untuk kembali ke **Menu Utama**.
+   
+### 3. Flowchart Menu User
+ 
+<img width="1717" height="1777" alt="RESERVASI LAPANGAN C2-Menu User drawio (1)" src="https://github.com/user-attachments/assets/3cfa4274-594e-45c9-89d9-784cf1406433" />
+
+ 
+Menu User menampilkan nama user dan saldo, lalu meminta input pilihan. Pilihan di luar daftar menampilkan "Pilihan tidak ada!". Setiap fitur selesai dengan "Tekan Enter untuk kembali ke Menu User".
+ 
+| Pilihan | Alur singkat |
+|---|---|
+| **Lihat Lapangan** | Baca data dari JSON → tampilkan tabel lapangan (ID, Nama, Harga/Jam, Luas, Lokasi). |
+| **Reservasi Lapangan** | Tampil saldo dan daftar lapangan → input ID lapangan → input tanggal (tidak boleh lewat) → tampil jam operasional dan jam terpesan → input jam mulai dan durasi → cek jam belum lewat dan tidak bentrok → hitung total (harga/jam × durasi) → cek saldo cukup → konfirmasi bayar (y/n) → saldo dikurangi, reservasi disimpan (status *Dipesan*) → tampil invoice (opsional simpan `.txt`). |
+| **Riwayat Reservasi & Invoice** | Cek apakah punya reservasi → tampil tabel riwayat → input ID untuk cetak invoice (0 = kembali) → cek ID milik user → tampil invoice → opsi simpan ke folder `invoice/`. |
+| **Batalkan Reservasi** | Cek ada reservasi aktif → tampil daftar → input ID → cek ID valid dan status *Dipesan* → cek belum dimulai → konfirmasi (y/n) → status *Dibatalkan*, saldo dikembalikan → tampil refund dan saldo sekarang. |
+| **Top Up Saldo** | Tampil saldo dan batas top up → input nominal (Rp 10.000 sampai Rp 1.000.000) → konfirmasi → saldo bertambah dan riwayat dicatat. |
+| **Riwayat Top Up** | Baca JSON → tampil tabel riwayat (ID, Waktu, Nominal), atau pesan jika belum ada. |
+| **Logout** | Keluar dari Menu User dan kembali ke Menu Utama. |
+ 
+### 4. Flowchart Menu Admin
+ 
+<img width="2639" height="1502" alt="RESERVASI LAPANGAN C2-Menu Admin drawio (1)" src="https://github.com/user-attachments/assets/6dd4cca4-97be-4a31-b123-1b58330f6516" />
+
+ 
+Menu Admin membersihkan layar, menampilkan daftar menu, dan meminta input angka (diulang jika bukan angka atau di luar rentang). Alur tiap menu:
+ 
+| Pilihan | Alur singkat |
+|---|---|
+| **Lihat Lapangan** | Baca JSON → tampilkan tabel lapangan (atau "Belum ada data lapangan"). |
+| **Tambah Lapangan** | Input nama (tidak boleh kosong) → pilih jenis/atribut → input harga dan stok/atribut lain → buat ID baru (ID terbesar + 1) → simpan ke JSON → tampil "Lapangan berhasil ditambahkan". |
+| **Ubah Lapangan** | Tampil tabel → input ID → jika ditemukan, input data baru (kosong = tidak diubah) → validasi nilai → simpan ke JSON → tampil "Data lapangan diperbarui". |
+| **Hapus Lapangan** | Tampil tabel → input ID → jika ditemukan, konfirmasi "Yakin hapus?" (y/n) → hapus dan simpan ke JSON. |
+| **Kelola Reservasi** | Ambil semua reservasi → jika ada, input ID reservasi (0 = kembali) → jika ditemukan, lanjut ke sub-menu kelola reservasi. |
+| **Lihat Daftar User** | Tampilkan tabel akun terdaftar (Username, Role, Saldo dalam format Rupiah). |
+| **Lihat Ulasan Lapangan** | Baca JSON → input ID lapangan (0 = batal) → tampilkan ulasan. |
+| **Logout** | Tampil "Logout berhasil." lalu kembali ke Menu Utama. |
+ 
+Setelah fitur selesai, muncul jeda "Tekan Enter untuk melanjutkan..." lalu kembali ke Menu Admin.
 ## 🔑 Akun Default
 
 | Role | Username | Password |
@@ -106,7 +168,7 @@ File DataDDP.json menyimpan data user dan admin, menyimpan data lapangan, data r
 
 ## 📖 Penjelasan Kode Program
 
-### 1. Konstanta & Tuple Menu (baris 9–42)
+### 1. Tuple Menu
 
 Semua pengaturan program dikumpulkan di bagian atas supaya mudah diubah.
 
@@ -124,3 +186,5 @@ Semua pengaturan program dikumpulkan di bagian atas supaya mudah diubah.
 | MAKS_PERCOBAAN_PASSWORD | 3 | Batas salah password saat konfirmasi |
 | MAKS_ULASAN | 100 | Panjang ulasan maksimal |
 | STATUS_DIPESAN, STATUS_SELESAI, STATUS_BATAL | teks | Tiga status reservasi |
+
+
