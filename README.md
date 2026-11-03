@@ -95,3 +95,52 @@ python PADDP.py
 Saat pertama dijalankan, file DataDDP.json dibuat otomatis berisi 1 akun admin dan 5 lapangan awal.
 
 ---
+
+## 🔑 Akun Default
+
+| Role | Username | Password |
+|------|----------|----------|
+| Admin | admin | admin123 |
+
+User biasa dibuat lewat menu *Registrasi*.
+
+*5 lapangan awal:* Futsal A, Badminton 1, Basket Indoor, Voli Pasir, Tenis Outdoor.
+
+---
+
+## 🗂️ Struktur Data JSON
+
+File DataDDP.json punya 5 bagian utama:
+
+json
+{
+    "users":     { "username": { "password": "...", "role": "user", "saldo": 0 } },
+    "lapangan":  [ { "id": 1, "nama": "...", "harga": 0, "luas": 0, "lokasi": "...", "buka": "08:00", "tutup": "22:00" } ],
+    "reservasi": [ { "id": 1, "username": "...", "id_lapangan": 1, "tanggal": "2026-11-05", "mulai": "08:00", "durasi": 2, "total": 0, "denda": 0, "status": "Dipesan" } ],
+    "topup":     [ { "id": 1, "username": "...", "nominal": 0, "waktu": "..." } ],
+    "rating":    [ { "id": 1, "username": "...", "id_lapangan": 1, "id_reservasi": 1, "bintang": 5, "ulasan": "...", "waktu": "..." } ]
+}
+
+
+---
+
+## 📖 Penjelasan Kode Program
+
+### 1. Konstanta & Tuple Menu (baris 9–42)
+
+Semua pengaturan program dikumpulkan di bagian atas supaya mudah diubah.
+
+| Konstanta | Nilai | Fungsi |
+|-----------|-------|--------|
+| FILE | DataDDP.json | Nama file penyimpanan data |
+| FOLDER_INVOICE | invoice | Folder hasil simpan invoice |
+| MENU_UTAMA, MENU_ADMIN, MENU_USER, MENU_UBAH, MENU_KELOLA | tuple | Daftar menu (tuple karena isinya tidak berubah) |
+| MAKS_HARGA | 150.000 | Harga maksimal per jam |
+| MAKS_PASSWORD | 8 | Panjang password maksimal |
+| WAKTU_TUNGGU | 30 | Detik hitung mundur setelah login gagal |
+| MAKS_DURASI | 4 | Durasi sewa maksimal (jam) |
+| MIN_TOPUP / MAKS_TOPUP | 10.000 / 1.000.000 | Batas nominal top up |
+| DENDA_BATAL | 10.000 | Denda pembatalan oleh user |
+| MAKS_PERCOBAAN_PASSWORD | 3 | Batas salah password saat konfirmasi |
+| MAKS_ULASAN | 100 | Panjang ulasan maksimal |
+| STATUS_DIPESAN, STATUS_SELESAI, STATUS_BATAL | teks | Tiga status reservasi |
