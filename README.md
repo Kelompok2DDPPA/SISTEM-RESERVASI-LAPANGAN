@@ -40,12 +40,14 @@ File Program Python utama: `PADDP.py`  |  File Json Python: `DataDDP.json` (file
 
 di menu awal ini akan login sebagai admin atau user dan kita juga bisa membuat user baru dengan register.
 
+--- 
 
 ### Menu Admin
 <img width="466" height="369" alt="image" src="https://github.com/user-attachments/assets/2f0132be-818f-426f-86ce-08e76217d2ea" />
 
 saat login sebagai role admin akan menampilkan beberapa fungsi atau menu seperti berikut, dari menu berikut pengguna dipersilahkan untuk memilih (input pilihan)
 
+---
 
 ### Menu User
 <img width="473" height="450" alt="image" src="https://github.com/user-attachments/assets/6d9bb7b1-fc6e-49ff-9180-f7b5cf171eb8" />
@@ -74,9 +76,7 @@ Begitu juga dengan role user dimana akan menampilkan fungsi atau menu sebagai be
 | pwinput | Input password dengan tanda * |
 | prettytable | Menampilkan data dalam bentuk tabel rapi |
 
-Instal library tambahan melalui terminal:
-
-bash
+sebelum itu Instal terlebih dahulu library tambahan melalui terminal vscode:
 pip install prettytable pwinput
 
 ---
@@ -87,8 +87,7 @@ pip install prettytable pwinput
  
 <img width="1098" height="1139" alt="RESERVASI LAPANGAN C2-Flowchart Menu Utama drawio (1)" src="https://github.com/user-attachments/assets/2aa734c7-594f-4ad9-9952-a7d0225c1afa" />
 
- 
-Alur dimulai dari **Menu Utama**, yang menampilkan pilihan Menu User, Menu Admin, Registrasi, dan Log Out. Program meminta input pilihan (1/2/3/4), lalu memeriksa validitasnya:
+ Alur dimulai dari **Menu Utama**, yang menampilkan pilihan Menu User, Menu Admin, Registrasi, dan Log Out. Program meminta input pilihan (1/2/3/4), lalu memeriksa validitasnya:
  
 - **Pilihan tidak valid** → program kembali menampilkan menu utama.
 - **Pilihan 1 (Menu User)** → masuk ke alur *Menu User*.
@@ -239,3 +238,94 @@ Berikut halaman awal program untuk login
 <img width="466" height="361" alt="image" src="https://github.com/user-attachments/assets/c8851400-9c82-4aa2-9985-34df91489dfc" />
 
 menu awal admin
+
+---
+
+<img width="916" height="363" alt="image" src="https://github.com/user-attachments/assets/99ccd51a-c5da-4c1d-aa77-0bba1b62307a" />
+
+berikut menu daftar lapangan
+
+---
+
+<img width="523" height="370" alt="image" src="https://github.com/user-attachments/assets/0610a8ce-c8bf-4b79-a929-67f9d5d95be7" />
+
+menu menambahkan lapangan 
+
+---
+
+<img width="1018" height="673" alt="image" src="https://github.com/user-attachments/assets/c0fc5ef6-f360-4648-9427-ef3238ff97e0" />
+
+mengubah data lapangan 
+
+---
+
+<img width="898" height="490" alt="image" src="https://github.com/user-attachments/assets/7ec160c2-69e5-4b25-b5b7-2e6173784d05" />
+
+menghapus data lapangan yg hanya bisa di lakukan oleh admin
+
+---
+
+<img width="826" height="643" alt="image" src="https://github.com/user-attachments/assets/a78290bc-5746-4cd0-83a1-2fbdbe774a65" />
+
+berikut mengelola reservasi lapngan termasuk total pendapatan denda
+
+---
+
+<img width="626" height="518" alt="image" src="https://github.com/user-attachments/assets/20365d99-47b9-4c91-873e-fe5f5ea5009e" />
+
+berikut daftar user yg pernah registrasi serta login
+
+---
+
+<img width="1037" height="485" alt="image" src="https://github.com/user-attachments/assets/08c92777-b822-4c6b-9d69-b11adbd11c2e" />
+
+ulasan lapangan olahraga 
+
+---
+
+<img width="620" height="443" alt="image" src="https://github.com/user-attachments/assets/be9b1644-02ba-427e-afc7-25d75eb893d2" />
+
+dan berikut ini menu user 
+
+---
+
+<img width="1052" height="725" alt="image" src="https://github.com/user-attachments/assets/d98428cb-bb4d-4c8a-a2c1-fd9f352ea71a" />
+
+berikut ini menu user saat reservasi lapangan dan pembayaran menggunakan saldo yg diisi melalui admin
+
+---
+
+<img width="584" height="485" alt="image" src="https://github.com/user-attachments/assets/6e5dd8a6-de21-41b2-93db-43c93388c7ec" />
+
+setelah reservasi lapangan berhasil akan mencetak invoice berformat txt
+
+---
+
+<img width="812" height="758" alt="image" src="https://github.com/user-attachments/assets/ab2ae6e3-b4a0-451d-ae57-11311328e009" />
+
+riwayat reservasi dan bisa juga mencetak invoice disini
+
+---
+
+<img width="831" height="522" alt="image" src="https://github.com/user-attachments/assets/4d34c7d3-f65d-49a5-ac2c-1e8b0162c053" />
+
+berikut menu pembatalan reservasi dan saat pembatalan akan terkena denda 10rb
+
+---
+
+<img width="643" height="391" alt="image" src="https://github.com/user-attachments/assets/d4167885-b251-41f5-8b8c-d1a38e7ea1dd" />
+
+berikut ialah menu topup saldo dan untuk mengkonfirmasinya menggunakan password
+
+---
+
+<img width="930" height="377" alt="image" src="https://github.com/user-attachments/assets/6c2f49db-5d42-4395-a677-aabc770050f5" />
+
+ulasan tiap lapangan
+
+---
+
+<img width="693" height="263" alt="image" src="https://github.com/user-attachments/assets/3de0add0-c45a-4635-8a4d-3412dc89e548" />
+
+menu untuk memberi rating lapangan
+
