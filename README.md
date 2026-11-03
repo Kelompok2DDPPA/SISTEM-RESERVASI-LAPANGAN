@@ -112,7 +112,10 @@ User biasa dibuat lewat menu *Registrasi*.
 
 File DataDDP.json punya 5 bagian utama:
 
-json
+<img width="516" height="517" alt="WhatsApp Image 2026-11-03 at 21 49 50" src="https://github.com/user-attachments/assets/a1b99fa1-201e-4b98-9c30-2bb373a1b306" />
+<img width="579" height="481" alt="WhatsApp Image 2026-11-03 at 21 49 50 (1)" src="https://github.com/user-attachments/assets/490540ff-5a82-4e3d-a70d-720f83075c82" />
+<img width="523" height="435" alt="WhatsApp Image 2026-11-03 at 21 49 51" src="https://github.com/user-attachments/assets/480ee60f-10b4-4681-9b46-f073c7d21b10" />
+<img width="631" height="402" alt="image" src="https://github.com/user-attachments/assets/9ed20afd-d501-471f-84b4-b2f2a48a0104" />
 
 
 
