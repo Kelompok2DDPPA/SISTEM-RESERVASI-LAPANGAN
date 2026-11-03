@@ -1,0 +1,18 @@
+============================================
+         INVOICE RESERVASI LAPANGAN         
+============================================
+No. Invoice      : INV-20261103-004
+Waktu Transaksi  : 2026-11-03 22:17:05
+Pelanggan        : Azzam
+Lapangan         : lapanganHexa
+Lokasi           : SMD
+Tanggal Main     : 2026-11-04
+Jam              : 08:30-11:30
+Durasi           : 3 jam
+Harga/Jam        : Rp 9.000
+Metode Bayar     : Saldo E-Money
+Status           : Dipesan
+--------------------------------------------
+TOTAL BAYAR      : Rp 27.000
+============================================
+Terima kasih telah memesan!
