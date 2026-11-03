@@ -49,3 +49,47 @@ saat login sebagai admin akan menampilkan beberapa fungsi seperti berikut
 
 ### Menu User
 <img width="473" height="450" alt="image" src="https://github.com/user-attachments/assets/6d9bb7b1-fc6e-49ff-9180-f7b5cf171eb8" />
+
+### Fitur Tambahan
+- 🔐 Password disembunyikan dengan tanda *
+- ⏳ Login gagal 3 kali → hitung mundur 30 detik
+- 🕒 Setiap lapangan punya *jam operasional sendiri* (bisa diacak otomatis)
+- 🧾 Invoice otomatis, bisa disimpan sebagai file .txt
+- ⭐ Rating dan ulasan lapangan
+- 🛡️ Anti-crash: error input ditangani, Ctrl+C tidak menutup program
+
+---
+
+## 📦 Library yang Digunakan
+
+| Library | Fungsi |
+|---------|--------|
+| json | Menyimpan & membaca data dari file JSON |
+| os | Membersihkan layar (cls/clear) dan membuat folder invoice |
+| time | Jeda dan hitung mundur saat login gagal |
+| random | Mengacak jam operasional lapangan |
+| datetime | Validasi tanggal/jam dan mengecek reservasi yang sudah lewat |
+| pwinput | Input password dengan tanda * |
+| prettytable | Menampilkan data dalam bentuk tabel rapi |
+
+Instal library tambahan:
+
+bash
+pip install prettytable pwinput
+
+
+---
+
+## ▶️ Cara Menjalankan
+
+1. Pastikan Python 3 sudah terpasang.
+2. Instal library: pip install prettytable pwinput
+3. Jalankan program:
+
+bash
+python PADDP.py
+
+
+Saat pertama dijalankan, file DataDDP.json dibuat otomatis berisi 1 akun admin dan 5 lapangan awal.
+
+---
