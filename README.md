@@ -14,7 +14,25 @@ Diana Aurelia	    2609116105
 
 ---
 
-Program Sistem Reservasi Lapangan Olahraga ini berbasis **python** untuk yang dibuat untuk mengelola reservasi lapangan olahraga. Program punya **dua role**, yaitu **Admin** dan **User**. Pembayaran memakai **saldo yg sudah diisi melalui admin**, dan semua data disimpan otomatis di file **JSON**.
+Program Sistem Reservasi Lapangan Olahraga ini berbasis **python** untuk yang dibuat untuk mengelola reservasi lapangan olahraga. Program mempunyai **dua role**, yaitu **Admin** dan **User**. Pembayaran memakai **saldo yg sudah diisi melalui admin**, dan semua data disimpan otomatis di file **JSON**.
+
+---
+
+Sistem Reservasi Lapangan Olahraga merupakan aplikasi berbasis Python yang dirancang untuk mempermudah proses pengelolaan dan pemesanan lapangan olahraga. Aplikasi ini memiliki dua hak akses pengguna, yaitu **Admin** dan **User**. Admin dapat mengelola data lapangan, mengatur jam operasional, mengelola reservasi, serta melihat daftar pengguna. Sementara itu, User dapat melihat informasi lapangan, melakukan reservasi, melakukan pembayaran menggunakan saldo E-Money, melihat riwayat reservasi dan invoice, membatalkan reservasi, serta melakukan top up saldo.
+
+Sistem ini juga dilengkapi dengan fitur validasi input, pengecekan ketersediaan jadwal, pencegahan bentrok reservasi, pengelolaan saldo dan refund, serta pembuatan invoice dalam format `.txt`. Seluruh data aplikasi disimpan menggunakan file JSON sehingga data pengguna, lapangan, reservasi, dan transaksi top up dapat dipertahankan meskipun program ditutup.
+
+---
+
+## Tujuan
+Tujuan dari pembuatan program Sistem Reservasi Lapangan Olahraga adalah:
+1. **Untuk mempermudah proses reservasi lapangan**, sehingga pengguna dapat melihat informasi dan melakukan pemesanan lapangan dengan lebih praktis.
+2. **untuk membantu pengelolaan data lapangan**, seperti menambahkan, mengubah, melihat, dan menghapus informasi lapangan melalui hak akses admin.
+3. **Menerapkan sistem login dan hak akses**, untuk membedakan fitur yang dapat digunakan oleh Admin dan User.
+4. **Mengelola transaksi pembayaran digital**, melalui sistem saldo E-Money yang dilengkapi dengan fitur top up dan riwayat transaksi.
+5. **Mencegah terjadinya bentrok jadwal reservasi**, dengan melakukan pemeriksaan ketersediaan waktu sebelum pemesanan dikonfirmasi.
+6. **Menyediakan riwayat dan bukti transaksi**, melalui pencatatan reservasi serta pembuatan invoice secara otomatis.
+7. **Menerapkan konsep pemrograman Python**, seperti penggunaan fungsi, percabangan, perulangan, dictionary, list, pengolahan file JSON, dan penanganan kesalahan (*error handling*).
 
 File Program Python utama: `PADDP.py`  |  File Json Python: `DataDDP.json` (file ini dibuat otomatis)
 
@@ -189,7 +207,7 @@ Semua pengaturan program dikumpulkan di bagian atas supaya mudah diubah.
 
 ## 👥 Daftar Fitur per Role
  
-### 🔐 Umum (belum login)
+### 🔐 (belum login)
 
  
 | No | Fitur | Deskripsi |
