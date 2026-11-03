@@ -347,3 +347,6 @@ ulasan tiap lapangan
 
 menu untuk memberi rating lapangan
 
+---
+
+sekian dari kami Kelompok 2 TERIMAKASIH
