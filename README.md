@@ -188,3 +188,54 @@ Semua pengaturan program dikumpulkan di bagian atas supaya mudah diubah.
 | STATUS_DIPESAN, STATUS_SELESAI, STATUS_BATAL | teks | Tiga status reservasi |
 
 
+## 👥 Daftar Fitur per Role
+ 
+### 🔐 Umum (belum login)
+
+ 
+| No | Fitur | Deskripsi |
+|---|---|---|
+| 1 | Login | Masuk dengan username dan password. Gagal 3 kali memicu hitung mundur 30 detik. Role (admin/user) menentukan menu yang tampil. |
+| 2 | Registrasi | Membuat akun user baru (username unik, password maks 8 karakter, saldo awal Rp 0). |
+| 3 | Keluar | Menutup program. |
+ 
+### 🛠️ Admin
+ 
+| No | Fitur | Deskripsi |
+|---|---|---|
+| 1 | Lihat Lapangan | Menampilkan semua lapangan beserta harga, luas, jam operasional, lokasi, dan rating. |
+| 2 | Tambah Lapangan | Menambah lapangan baru, jam operasional bisa diacak otomatis atau manual. |
+| 3 | Ubah Lapangan | Mengubah nama, harga, luas, lokasi, atau jam operasional. Perubahan jam ditolak jika ada reservasi aktif di luar jam baru. |
+| 4 | Hapus Lapangan | Menghapus lapangan (dengan konfirmasi), ditolak jika masih ada reservasi aktif. |
+| 5 | Kelola Reservasi | Melihat semua reservasi plus total pendapatan, lalu **Tandai Selesai**, **Batalkan & Refund** (refund penuh), atau **Hapus Riwayat**. |
+| 6 | Daftar User | Melihat semua akun beserta role, saldo, dan jumlah reservasi. |
+| 7 | Lihat Ulasan Lapangan | Melihat rating dan ulasan dari user per lapangan. |
+| 8 | Logout | Kembali ke menu utama. |
+ 
+### 👤 User
+ 
+| No | Fitur | Deskripsi |
+|---|---|---|
+| 1 | Lihat Lapangan | Melihat daftar lapangan, harga, jam operasional, dan rating. |
+| 2 | Reservasi Lapangan | Memesan lapangan dengan validasi jadwal dan pembayaran memakai saldo. |
+| 3 | Riwayat Reservasi & Invoice | Melihat riwayat pesanan dan mencetak atau menyimpan invoice `.txt`. |
+| 4 | Batalkan Reservasi | Membatalkan pesanan aktif dengan denda Rp 10.000, sisanya di-refund ke saldo. |
+| 5 | Top Up Saldo | Menambah saldo (Rp 10.000 sampai Rp 1.000.000), dikonfirmasi password. |
+| 6 | Riwayat Top Up | Melihat semua transaksi top up. |
+| 7 | Beri Rating Lapangan | Memberi 1 sampai 5 bintang dan ulasan untuk reservasi berstatus *Selesai*. |
+| 8 | Lihat Ulasan Lapangan | Membaca rating dan ulasan lapangan. |
+| 9 | Logout | Kembali ke menu utama. |
+ 
+---
+
+### 📷 Screenshoot Output setiap program
+
+<img width="466" height="254" alt="image" src="https://github.com/user-attachments/assets/bc08e0b8-c2ff-48c3-9aa2-21d96ef7740d" />
+
+Berikut halaman awal program untuk login
+
+---
+
+<img width="466" height="361" alt="image" src="https://github.com/user-attachments/assets/c8851400-9c82-4aa2-9985-34df91489dfc" />
+
+menu awal admin
