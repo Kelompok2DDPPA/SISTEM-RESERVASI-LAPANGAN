@@ -113,13 +113,7 @@ User biasa dibuat lewat menu *Registrasi*.
 File DataDDP.json punya 5 bagian utama:
 
 json
-{
-    "users":     { "username": { "password": "...", "role": "user", "saldo": 0 } },
-    "lapangan":  [ { "id": 1, "nama": "...", "harga": 0, "luas": 0, "lokasi": "...", "buka": "08:00", "tutup": "22:00" } ],
-    "reservasi": [ { "id": 1, "username": "...", "id_lapangan": 1, "tanggal": "2026-11-05", "mulai": "08:00", "durasi": 2, "total": 0, "denda": 0, "status": "Dipesan" } ],
-    "topup":     [ { "id": 1, "username": "...", "nominal": 0, "waktu": "..." } ],
-    "rating":    [ { "id": 1, "username": "...", "id_lapangan": 1, "id_reservasi": 1, "bintang": 5, "ulasan": "...", "waktu": "..." } ]
-}
+
 
 
 ---
